@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--
+it runs test cases in parallel mode on class level, you can always change that by editing tag below
+i.e. <suite name="MyTestSuiteName" > 
+-->
+<suite name="BPUITestSuite" parallel="classes" thread-count="10"   >
+   <!-- <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>  
+        <listener class-name="com.intuit.bpui_qa.TestListener"/>      
+    </listeners> -->
+
+
+  	<test name="BPUI Test Suite" preserve-order="true"> 
+    	<classes> 
+    		<class name="com.intuit.bpui_qa.CancelRecurringPaymentTests"/>
+    		<!-- <class name="com.intuit.bpui_qa.PayeeListTests"/> -->
+      		<!-- <class name="com.intuit.bpui_qa.SearchPayeeTests"/> -->
+      		<!--  <class name="com.intuit.bpui_qa.PayeeDetailsTests"/>
+      		<class name="com.intuit.bpui_qa.ManageFundingAccountsTests"/>
+      		<class name="com.intuit.bpui_qa.AddUnknownPayeeTests"/>
+      		<class name="com.intuit.bpui_qa.EditPayeeDetails"/>
+      		<class name="com.intuit.bpui_qa.DeletePayeeTests">
+      			<methods>
+      				<include name="testVerifyDeleteHeader"/>
+      				<include name="testVerifyDeleteLinks"/>
+      				<include name="testVerifyDeleteMainHeader"/>
+      				<include name="testVerifyDeleteMainScenario"/>
+      				<include name="testVerifyHistoryPageIsUpdated"/>
+      			</methods>
+      		</class>
+      		<class name="com.intuit.bpui_qa.PaymentHistoryTests">
+      		    <methods>
+      				<include name="testHeadersAreShown"/>
+      				<include name="testDefaultSortOrder"/>
+      				<include name="testTheDefaultFooter"/>
+      				<include name="testDescendingSentOnSortOrder"/>
+      				<include name="testVerifyAscendingOrderOfPaidToColumn"/>
+      				<include name="testVerifyDescendingOrderOfPaidToColumn"/>
+      				<include name="testVerifyAscendingOrderOfAmountColumn"/>
+      				<include name="testVerifyDescendingOrderOfAmountColumn"/>
+      				<include name="testVerifyAscendingOrderOfConfirmNoColumn"/>
+      				<include name="testVerifyDescendingOrderOfConfirmNoColumn"/>
+      				<include name="testVerifyAscendingOrderOfPaidFromColumn"/>
+      				<include name="testVerifyDescendingOrderOfPaidFromColumn"/>
+      				<include name="testMenuItemsOnTop"/>
+      				<include name="testVerifyLast7DaysFilter"/>
+      				<include name="testVerifyLast2MonthsFilter"/>
+      				<include name="testVerifyLast6MonthsFilter"/> 
+      				<include name="testVerifyCustomDateRangeFilter"/>
+      			</methods>
+      		</class>-->
+    	</classes> 
+  	</test> 
+  	
+</suite>
